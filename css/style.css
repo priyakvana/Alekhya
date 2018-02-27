@@ -446,7 +446,7 @@ a:focus, a:hover {
 }
 
 .single-page-header {
-  background: #98ca1f;
+  background: rgb(119, 175, 55);
   padding: 50px 0;
   text-align: center;
   color: #fff;
@@ -1752,4 +1752,3 @@ a:focus, a:hover {
   font-size: 200px;
 }
 
-/*# sourceMappingURL=maps/style.css.map */
