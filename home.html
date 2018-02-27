@@ -31,21 +31,11 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
-
-  <!-- Colors -->
-  <!-- <link rel="stylesheet" type="text/css" href="css/colors/green.css" title="green">
-  <link rel="stylesheet" type="text/css" href="css/colors/red.css" title="light-red">
-  <link rel="stylesheet" type="text/css" href="css/colors/light-blue.css" title="light-blue">
-  <link rel="stylesheet" type="text/css" href="css/colors/yellow.css" title="yellow">
-  <link rel="stylesheet" type="text/css" href="css/colors/light-green.css" title="light-green">
-  <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="blue"> -->
-  
-
 </head>
 
 <body id="body">
 
-
+ 
 
 
   
@@ -66,8 +56,8 @@ Fixed Navigation
             </button>
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-               <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+               <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home </a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="about.html">About</a>
@@ -78,7 +68,7 @@ Fixed Navigation
                <li class="nav-item">
                   <a class="nav-link" href="project.html">Projects</a>
                </li>
-               <li class="nav-item active">
+               <li class="nav-item">
                   <a class="nav-link" href="gallery.html">Gallery</a>
 			   </li>
 			   <li class="nav-item">
@@ -105,35 +95,117 @@ Fixed Navigation
 </div>
 </section>
 
+ <!--
+Welcome Slider
+==================================== -->
 
-<section class="single-page-header">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2>Gallery</h2>
-					<nav aria-label="breadcrumb mx-auto" role="navigation">
-					  <ol class="breadcrumb">
-						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Gallery</li>
-					  </ol>
-					</nav>
+<section class="hero-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				 <!-- <img class="img-fluid rounded" src="images/slider/video-player-thumb.jpg" alt=""> -->
+						 <video height="100%" width="100%"  id="video"  poster="images/slider/video-player-thumb.jpg"onclick="fun()" controls>
+							<source src="videoplayback.webm" >
+						</video> 
+						<script>
+							function fun(){
+								var video = document.getElementById('video'); 
+								video.addEventListener('click',function(){
+									// video.play(); 
+									if(video.paused) { video.play(); }
+									else { video.pause(); }
+									 });
+							}
+						</script>
+						<!-- <iframe src="Wood Rose - Fine Living Apartments.mp4" frameborder="0" allowfullscreen></iframe> -->
+				</div>
+			<br>
+
+			<div class="col-md-6">
+				<div class="block">
+					&nbsp;
+					<h2>Rediscover the Joy  of Pure Living!</h2>
+					<p>Go Green</p>
+					<ul class="list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
+						<!-- <li class="list-inline-item">
+							<a href="kvana.com" target="_blank" class="btn btn-main">Download More</a>		
+						</li> -->
+					</ul>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>	
 
+
+
+<!--
+Start About Section
+==================================== -->
+<section class="service-2 section bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="title text-center">
+          <h4>How We Works</h4>
+          <h2>Our work process</h2>
+          <span class="border"></span>
+          <p>Rediscover the Joy  of Pure Living!</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-sm-6 p-0">
+        <div class="service-item text-center">
+            <span class="count">1.</span>
+            <i class="tf-ion-ios-briefcase-outline"></i>
+            <h4>Project Analysis</h4>
+            <p>Rediscover the Joy  of Pure Living</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 p-0">
+        <div class="service-item text-center">
+          <span class="count">2.</span>
+          <i class="tf-ion-ios-alarm-outline"></i>
+          <h4>Time Management</h4>
+          <p>Rediscover the Joy  of Pure Living</p>
+        </div>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-md-4 col-sm-6 p-0">
+        <div class="service-item text-center">
+          <span class="count">3.</span>
+          <i class="tf-ion-ios-email-outline"></i>
+          <h4>Mail Support</h4>
+          <p>Rediscover the Joy  of Pure Living</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 p-0">
+        <div class="service-item text-center">
+          <span class="count">4.</span>
+          <i class="tf-ion-ios-locked-outline"></i>
+          <h4>Secure System</h4>
+          <p>Rediscover the Joy  of Pure Living</p>
+        </div>
+      </div>
+    </div>    <!-- End row -->
+  </div>    <!-- End container -->
+</section>   <!-- End section -->
+
+<!-- Start Portfolio Section
+=========================================== -->
 <section class="portfolio section" id="portfolio">
 	<div class="container-fluid">
-		<!-- <div class="row">
+		<div class="row">
 			<div class="col">
 				<div class="title text-center">
-					<h4>Gallery</h4>
-					<h2>Gallery</h2>
+					<h4>RECENT WORK</h4>
+					<h2>WORK SHOWCASE.</h2>
 					<span class="border"></span>
 					<p>Rediscover the Joy  of Pure Living</p>
 				</div>
 			</div>
-		</div> -->
+		</div>
 		<div class="row" >
 			<div class="col-lg-12">
 				<!-- /section title -->
@@ -161,7 +233,7 @@ Fixed Navigation
 			
 				<div class="col-6 col-md-3 padding-0 mix TempleBells Heliconia">
 					<div class="portfolio-block">
-						<img class="img-fluid" src="images/portfolio/portfolio-7.jpg" alt="" >
+						<img class="img-fluid" src="images/portfolio/portfolio-7.jpg" alt="">
 						<div class="caption">
 							<a class="search-icon" href="images/portfolio/portfolio-7.jpg" data-lightbox="image-2">
 								<i class="tf-ion-ios-search-strong"></i>
@@ -244,7 +316,130 @@ Fixed Navigation
 				
 				
 				
+			
 
+
+<!-- Start Pricing section
+		=========================================== -->
+	<section class="pricing-table  section" id="pricing">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="title text-center">
+						<h4>Go Green</h4>
+						<h2>We Believe Nature is God </h2>
+						<span class="border"></span>
+						<h4><b><i>AlekhyaHomes</i></b></h4>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- single pricing table -->
+				<div class="col-md-4 col-sm-6 col-xs-12" >
+					<div class="pricing-item">
+						
+						<!-- plan name & value -->
+						<div class="price-title bg-pricing">
+							<h3 style="color:black;">Park Transformation</h3>
+							 <strong class="value">&nbsp; </strong>
+							 <p>&nbsp;</p> 
+							 <p>&nbsp;</p> 
+							 <p>&nbsp;</p> 
+							 <p>&nbsp;</p>
+							 <p>&nbsp;</p>
+							 <p>&nbsp;</p> 
+									<p>&nbsp;</p> 
+								<p>&nbsp;</p> 
+						</div>
+						<!-- /plan name & value -->
+						
+						<!-- plan description -->
+						<!-- /plan description -->
+						
+						<!-- signup button -->
+						<!-- <a class="btn btn-main" href="#">Signup</a> -->
+						<!-- /signup button -->
+						
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12"  >
+					<div class="pricing-item">
+					
+						<!-- plan name & value -->
+						<div class="price-title  bg-pricing">
+							<h3 style="color:black;">Ananda Green Mantra</h3>
+							<strong class="value">&nbsp;</strong>
+							<p>&nbsp;</p>
+							<p>&nbsp;</p> 
+							<p>&nbsp;</p> 
+							<p>&nbsp;</p> 
+							<p>&nbsp;</p>
+							<p>&nbsp;</p> 
+								 <p>&nbsp;</p> 
+							 <p>&nbsp;</p>
+						</div>
+						
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12 mx-auto">
+					<div class="pricing-item ">
+						
+						<!-- plan name & value -->
+						<div class="price-title bg-pricing">
+							<h3  style="color:black;">Park Planation</h3>
+							<strong class="value">&nbsp;</strong>
+							<p>&nbsp;</p>
+							<p>&nbsp;</p> 
+								 <p>&nbsp;</p> 
+							 <p>&nbsp;</p> 
+							 <p>&nbsp;</p>
+							 <p>&nbsp;</p> 
+									<p>&nbsp;</p> 
+								<p>&nbsp;</p>
+						</div>
+				
+					</div>
+				</div>
+
+				
+				
+			</div>       <!-- End row -->
+		</div>   	<!-- End container -->
+	</section>   <!-- End section -->
+		
+
+
+
+
+<footer id="footer" class="bg-one">
+  <div class="top-footer">
+    <div class="container">
+      <div class="row">
+			<div class="col-sm-3 col-md-3 col-lg-3">
+				&nbsp;
+				</div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+		  <h3>About</h3>
+		  <p>Rediscover the Joy  of Pure Living!</p>
+        </div>
+        <!-- End of .col-sm-3 -->
+
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <h3>Our Services</h3>
+          <ul>
+				<li><a href="#">General Contracting</a></li>
+				<li><a href="#">Design Build</a></li>
+				<li><a href="#">Interior and Exterior Finishes</a></li>
+          </ul>
+		</div>
+		<div class="col-sm-3 col-md-3 col-lg-3">
+				&nbsp;
+				</div>
+       
+      </div>
+    </div> <!-- end container -->
   </div>
   <div class="footer-bottom">
     <h5>Copyright 2018. All rights reserved.</h5>
@@ -252,15 +447,6 @@ Fixed Navigation
   </div>
 </footer> <!-- end footer -->
 
-
-    <!-- end Footer Area
-    ========================================== -->
-
-
-    
-    <!-- 
-    Essential Scripts
-    =====================================-->
     
     <!-- Main jQuery -->
     <script src="plugins/jquery/dist/jquery.min.js"></script>
@@ -278,8 +464,6 @@ Fixed Navigation
     <!-- Smooth Scroll js -->
 	<script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script> -->
-    
     <!-- Custom js -->
     <script src="js/script.js"></script>
 

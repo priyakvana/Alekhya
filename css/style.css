@@ -446,7 +446,7 @@ a:focus, a:hover {
 }
 
 .single-page-header {
-  background: #1f2532;
+  background: #98ca1f;
   padding: 50px 0;
   text-align: center;
   color: #fff;
@@ -849,7 +849,7 @@ a:focus, a:hover {
   padding: 15px 0;
   width: 100%;
   margin: 0;
-  background: #f0326b;
+  background: #f05e32;
   color: #fff;
   border-radius: 0;
   cursor: pointer;
@@ -1229,7 +1229,7 @@ a:focus, a:hover {
 }
 
 .service-list .block {
-  background: #f0326b;
+  background: #f05e32;
   color: #fff;
   padding: 30px;
 }
