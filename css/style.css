@@ -1135,7 +1135,7 @@ a:focus, a:hover {
 .portfolio-block .caption .search-icon {
   background: #f0326b;
   color: #fff;
-  display: inline-block;
+  display: inline-block; 
   padding: 4px 13px;
   font-size: 25px;
   border-radius: 30px;
